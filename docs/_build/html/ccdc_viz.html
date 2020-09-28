@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>CCDC Results Visualization Tutorial (GUI) &mdash; GLANCE 0.0.1 documentation</title>
+  <title>CCDC Results Visualization Tutorial (GUI) &mdash; glance-tools 0.0.1 documentation</title>
   
 
   
@@ -51,7 +51,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> GLANCE
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> glance-tools
           
 
           
@@ -113,7 +113,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">GLANCE</a>
+          <a href="index.html">glance-tools</a>
         
       </nav>
 
@@ -165,7 +165,7 @@
             
   <div class="section" id="ccdc-results-visualization-tutorial-gui">
 <h1>CCDC Results Visualization Tutorial (GUI)<a class="headerlink" href="#ccdc-results-visualization-tutorial-gui" title="Permalink to this headline">¶</a></h1>
-<p>By Paulo Arévalo. May 14, 2020</p>
+<p>By Paulo Arévalo. September 28, 2020</p>
 <p>To faciliate easy access to our API we have created a series of graphical user
 interfaces (GUIs) that require no coding by the user. These guis can be used for
 calculating CCDC model parameters (i.e. regression coefficients), displaying
@@ -182,16 +182,17 @@ the temporal segments fitted on them by the CCDC algorithm.</p></li>
 <li><p>Visualize images predicted from the temporal segments.</p></li>
 <li><p>Visualize change information.</p></li>
 </ul>
-<p>The tool use in this tutorial can be found
+<p>The tool used in this tutorial can be found
 <a class="reference external" href="https://glance.earthengine.app/view/visualizeccd">here</a>.</p>
 <p>The tool might look like in the image below when you load it for the first time.
 To make sure you can visualize the map, please lower the separator bar that
 divides the map area and the time series chart area shown below.</p>
 <p>The panel on the left controls the parameters for running CCD interactively
-for any point in the world with Landsat coverage. The panel on the right
-controls the interaction with the loaded CCDC results, and allows you to
-create predicted (synthetic) images, visualize maps of CCDC
-coefficients, and map the changes detected by the algorithm.</p>
+for any point in the world with Landsat coverage. It also holds miscellaneous
+controls to allow loading ancillary data, going to a specific coordinate, or
+clearing the map. The panel on the right controls the interaction with the
+loaded CCDC results, and allows you to create predicted (synthetic) images,
+visualize maps of CCDC coefficients, and map the changes detected by the algorithm.</p>
 <div class="figure align-default" id="id1">
 <img alt="CCDC visualizer interface" src="_images/ccdcVizInterface.png" />
 <p class="caption"><span class="caption-text">Lower the horizontal division on top if the map is not visible..</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
@@ -241,7 +242,7 @@ To load pre-existing CCDC results, look at the top right panel in the app,
 it must look like this:</p>
 <div class="figure align-default" id="id4">
 <img alt="Load panel" src="_images/loadPanel.png" />
-<p class="caption"><span class="caption-text">Select which CCDC resutls to load using this panel. Once loaded, it will
+<p class="caption"><span class="caption-text">Select which CCDC results to load using this panel. Once loaded, it will
 display the available band names and suspected date format of the results,
 if stored in  the metadata at the time of creation.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
@@ -249,9 +250,9 @@ if stored in  the metadata at the time of creation.</span><a class="headerlink" 
 First, are they saved as a single image or a collection? Next is the path to
 the CCDC results.Even though they are not officially public yet, we can
 interact with some of the CCD results that have been executed by Google.
-The default values, particularly the “z” in the filter CCDC run, contain results
-for the period between 1999-2020. After setting the desired run prefix, you can
-click on the Load image button. When the two fields below the
+The default value contains two different runs: one for the period ~1985-1999,
+and another for the period ~1999-2019. Both
+results are directly  available when loaded by the tool. When the two fields below the
 button show their corresponding information, you will be able interact with the
 rest of the options in the control panel in any order.</p>
 </div>

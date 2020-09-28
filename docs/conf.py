@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'gee-ccdc-tools'
+project = 'glance-tools'
 copyright = '2020, Erick Bullock, Paulo Arevalo'
 author = 'Erick Bullock, Paulo Arevalo'
 

@@ -1,7 +1,7 @@
 CCDC Results Visualization Tutorial (GUI)
 =====================================================================
 
-By Paulo Arévalo. May 14, 2020
+By Paulo Arévalo. September 28, 2020
 
 To faciliate easy access to our API we have created a series of graphical user 
 interfaces (GUIs) that require no coding by the user. These guis can be used for 
@@ -20,7 +20,7 @@ In this guide you will learn how to:
 -  Visualize images predicted from the temporal segments.
 -  Visualize change information.
 
-The tool use in this tutorial can be found
+The tool used in this tutorial can be found
 `here <https://glance.earthengine.app/view/visualizeccd>`__.
 
 The tool might look like in the image below when you load it for the first time. 
@@ -28,10 +28,11 @@ To make sure you can visualize the map, please lower the separator bar that
 divides the map area and the time series chart area shown below. 
 
 The panel on the left controls the parameters for running CCD interactively 
-for any point in the world with Landsat coverage. The panel on the right 
-controls the interaction with the loaded CCDC results, and allows you to 
-create predicted (synthetic) images, visualize maps of CCDC 
-coefficients, and map the changes detected by the algorithm.
+for any point in the world with Landsat coverage. It also holds miscellaneous 
+controls to allow loading ancillary data, going to a specific coordinate, or
+clearing the map. The panel on the right controls the interaction with the
+loaded CCDC results, and allows you to create predicted (synthetic) images, 
+visualize maps of CCDC coefficients, and map the changes detected by the algorithm.
 
 .. figure:: ./img/ccdcVizInterface.png
    :alt: CCDC visualizer interface
@@ -93,7 +94,7 @@ it must look like this:
 .. figure:: ./img/loadPanel.png
    :alt: Load panel
 
-   Select which CCDC resutls to load using this panel. Once loaded, it will 
+   Select which CCDC results to load using this panel. Once loaded, it will 
    display the available band names and suspected date format of the results, 
    if stored in  the metadata at the time of creation.
 
@@ -102,9 +103,9 @@ The first few parameters describe the format of the CCDC results.
 First, are they saved as a single image or a collection? Next is the path to
 the CCDC results.Even though they are not officially public yet, we can 
 interact with some of the CCD results that have been executed by Google. 
-The default values, particularly the “z” in the filter CCDC run, contain results 
-for the period between 1999-2020. After setting the desired run prefix, you can 
-click on the Load image button. When the two fields below the 
+The default value contains two different runs: one for the period ~1985-1999,
+and another for the period ~1999-2019. Both
+results are directly  available when loaded by the tool. When the two fields below the 
 button show their corresponding information, you will be able interact with the 
 rest of the options in the control panel in any order. 
 
